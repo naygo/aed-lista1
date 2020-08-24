@@ -11,3 +11,16 @@ C:\Users\Nayla Gomes\Desktop\Lista 1\obj\Debug\netcoreapp3.1\Lista 1.csproj.Core
 C:\Users\Nayla Gomes\Desktop\Lista 1\obj\Debug\netcoreapp3.1\Lista 1.dll
 C:\Users\Nayla Gomes\Desktop\Lista 1\obj\Debug\netcoreapp3.1\Lista 1.pdb
 C:\Users\Nayla Gomes\Desktop\Lista 1\obj\Debug\netcoreapp3.1\Lista 1.genruntimeconfig.cache
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.exe
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.deps.json
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.runtimeconfig.json
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.runtimeconfig.dev.json
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.dll
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.pdb
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.csprojAssemblyReference.cache
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.csproj.CoreCompileInputs.cache
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.AssemblyInfoInputs.cache
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.AssemblyInfo.cs
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.dll
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.pdb
+C:\Users\jvict\OneDrive\Documentos\GitHub\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.genruntimeconfig.cache
