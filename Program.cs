@@ -15,6 +15,9 @@ namespace Lista_1
                 Console.WriteLine("[2] - Queue");
                 Console.WriteLine("[3] - Stack");
                 Console.WriteLine("[4] - Erro");
+                Console.WriteLine("[5] - Questão 5 com for");
+                Console.WriteLine("[6] - Questão 5 com foreach");
+                Console.WriteLine("[7] - Questão 6 com ArrayList");
                 Console.WriteLine("[0] - Sair");
                 Console.Write("=> ");
                 opcao = int.Parse(Console.ReadLine());
@@ -32,10 +35,15 @@ namespace Lista_1
                     case 4:
                         Questao4();
                         break;
+                    case 5:
+                        Questao5For();
+                        break;
                     case 6:
+                        Questao5Foreach();
+                        break;
+                    case 7:
                         Questao6ArrayList();
                         break;
-                        
                     default:
                         Console.Write("Cabo");
                         break;
@@ -78,7 +86,7 @@ namespace Lista_1
             Console.Clear();
         }
 
-            public static void Questao2 () {
+        public static void Questao2 () {
             /*2 – Faça um programa que leia n números inteiros e os armazene em um Queue. 
             Calcule a soma e a média aritmética 
             (use o comando FOREACH para iterar sobre os elementos)*/
@@ -144,7 +152,7 @@ namespace Lista_1
             Console.Clear();
 	    }
 
-            public static void Questao4() {
+        public static void Questao4() {
             /*4 – Faça um programa que preencha um ArrayList com elementos de diferentes 
             tipos (int, double, float, boolean, String). 
             Tente calcular a soma dos elementos. 
@@ -168,8 +176,120 @@ namespace Lista_1
             Console.ReadKey();
             Console.Clear();
         }
-        public static void Questao6ArrayList()
-        {
+
+        public static void Questao5For() {
+            /*5 – Faça um programa que preencha um ArrayList com os números entre 1 e 25. Pede-se:
+                • Imprima todos os elementos
+                • Imprima todos os elementos em ordem invertida
+                • Imprima todos os elementos em posições ímpares (o elemento da posição 1, 3, 5, ...)
+                • Imprima todos os elementos ímpares
+                • Imprima apenas os elementos da primeira metade do vetor (posição 0 a 12).*/
+ 
+            ArrayList numeros = new ArrayList();
+            for(int i = 1; i<=25; i++) {
+                numeros.Add(i);
+            }
+            
+            //imprimindo todos os elementos
+            Console.WriteLine("Imprimindo todos os elementos");
+            for(int num = 0; num < numeros.Count; num++)
+                Console.Write($"{numeros[num]}, ");
+            Console.WriteLine();
+ 
+            //imprimindo ordem invertida
+            numeros.Reverse();
+            Console.WriteLine("Imprimindo todos os elementos em ordem invertida");
+            for(int num = 0; num < numeros.Count; num++)
+                Console.Write($"{numeros[num]}, ");
+            Console.WriteLine();
+            numeros.Reverse();
+ 
+            //imprime em posições impares
+            Console.WriteLine("Imprimindo todos os elementos em posições impares");
+            for(int num = 0; num < numeros.Count; num++)
+                if(num % 2 != 0)
+                    Console.Write($"{numeros[num]}, ");
+            Console.WriteLine();
+ 
+            //Imprima todos os elementos ímpares
+            Console.WriteLine("Imprimindo todos os elementos ímpares");
+            for(int num = 0; num < numeros.Count; num++)
+                if((int)numeros[num] % 2 != 0)
+                    Console.Write($"{numeros[num]}, ");
+            Console.WriteLine();
+ 
+            //Imprima apenas os elementos da primeira metade do vetor (posição 0 a 12).
+            Console.WriteLine("Imprimindo todos os elementos da primeira metade do vetor");
+            for(int num = 0; num < numeros.Count/2; num++)  
+                Console.Write($"{numeros[num]}, ");
+            Console.WriteLine();
+ 
+            Console.WriteLine("Tecle qualquer coisa para voltar ao menu...");
+            Console.ReadKey();
+            Console.Clear();
+        }
+        
+        public static void Questao5Foreach() {
+            /*5 – Faça um programa que preencha um ArrayList com os números entre 1 e 25. Pede-se:
+                • Imprima todos os elementos
+                • Imprima todos os elementos em ordem invertida
+                • Imprima todos os elementos em posições ímpares (o elemento da posição 1, 3, 5, ...)
+                • Imprima todos os elementos ímpares
+                • Imprima apenas os elementos da primeira metade do vetor (posição 0 a 12).*/
+ 
+            ArrayList numeros = new ArrayList();
+            for(int i = 1; i<=25; i++) {
+                numeros.Add(i);
+            }
+            
+            //imprimindo todos os elementos
+            Console.WriteLine("Imprimindo todos os elementos");
+            foreach(int num in numeros)
+                Console.Write($"{num}, ");
+            Console.WriteLine();
+ 
+            //imprimindo ordem invertida
+            numeros.Reverse();
+            Console.WriteLine("Imprimindo todos os elementos em ordem invertida");
+            foreach(int num in numeros)
+                Console.Write($"{num}, ");
+            Console.WriteLine();
+            numeros.Reverse();
+ 
+            //imprime em posições impares
+            Console.WriteLine("Imprimindo todos os elementos em posições impares");
+            int qnt  = numeros.Count - 1;
+            foreach(int num in numeros) {
+                if(qnt % 2 != 0)
+                    Console.Write($"{num}, ");
+                qnt--;
+            }
+            Console.WriteLine();
+ 
+            //Imprima todos os elementos ímpares
+            Console.WriteLine("Imprimindo todos os elementos ímpares");
+            foreach(int num in numeros)
+                if(num % 2 != 0)
+                    Console.Write($"{num}, ");
+            Console.WriteLine();
+ 
+            //Imprima apenas os elementos da primeira metade do vetor (posição 0 a 12).
+            Console.WriteLine("Imprimindo todos os elementos da primeira metade do vetor");
+            qnt  = numeros.Count/2;
+            foreach(int num in numeros) {
+                if(qnt >= 0)
+                    Console.Write($"{num}, ");
+                qnt--;
+            }
+                
+            Console.WriteLine();
+ 
+            Console.WriteLine("Tecle qualquer coisa para voltar ao menu...");
+            Console.ReadKey();
+            Console.Clear();
+        }
+
+        public static void Questao6ArrayList() {
             /*6 - Faça um programa que gere uma coleção com n números inteiros aleatórios (o valor de n deve ser
             informado pelo usuário no início da execução do programa. Imprima os elementos da coleção.*/
             int n;
