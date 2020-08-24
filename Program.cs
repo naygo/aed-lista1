@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections;
 namespace Lista_1
 {
@@ -30,6 +31,9 @@ namespace Lista_1
                         break;
                     case 4:
                         Questao4();
+                        break;
+                    case 6:
+                        Questao6ArrayList();
                         break;
                         
                     default:
@@ -163,6 +167,29 @@ namespace Lista_1
             Console.Write("Tecle qualquer coisa para voltar ao menu...");
             Console.ReadKey();
             Console.Clear();
+        }
+        public static void Questao6ArrayList()
+        {
+            /*6 - Faça um programa que gere uma coleção com n números inteiros aleatórios (o valor de n deve ser
+            informado pelo usuário no início da execução do programa. Imprima os elementos da coleção.*/
+            int n;
+            Random random = new Random();
+            Console.WriteLine("Questão 6");
+            Console.Write("Quantos números deseja gerar? \n=> ");
+            n = int.Parse(Console.ReadLine());
+
+            ArrayList colecao = new ArrayList();
+            for(int i = 0; i < n; i++)
+            {
+                colecao.Add(random.Next(0,200));
+            }
+            foreach(int i in colecao)
+            {
+                Console.WriteLine(i);
+            }
+
+
+
         }
     }
 }
