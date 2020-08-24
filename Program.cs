@@ -7,6 +7,8 @@ namespace Lista_1
     {
         public static void Main(string[] args)
         {
+            Console.Clear();
+
             int opcao = -1;
 
             while(opcao != 0) {
@@ -15,6 +17,12 @@ namespace Lista_1
                 Console.WriteLine("[2] - Queue");
                 Console.WriteLine("[3] - Stack");
                 Console.WriteLine("[4] - Erro");
+                Console.WriteLine("[5] - ");
+                Console.WriteLine("[6] - Números inteiros aleatórios (ArrayList)");
+                Console.WriteLine("[7] - ");
+                Console.WriteLine("[8] - Função de retornar soma (Stack)");
+                Console.WriteLine("[9] - ");
+                Console.WriteLine("[10] - ");
                 Console.WriteLine("[0] - Sair");
                 Console.Write("=> ");
                 opcao = int.Parse(Console.ReadLine());
@@ -35,14 +43,21 @@ namespace Lista_1
                     case 6:
                         Questao6ArrayList();
                         break;
+                    case 8:
+                        Questao8Stack();
+                        break;
+
+                    case 0:
+                        opcao = 0;
+                        break;
                         
                     default:
-                        Console.Write("Cabo");
+                        Console.Clear();
+                        Console.WriteLine("---x--- Opção inválida! ---x---");
                         break;
                 }
             }
             
-
             Console.ReadKey();
         }
 
@@ -172,9 +187,11 @@ namespace Lista_1
         {
             /*6 - Faça um programa que gere uma coleção com n números inteiros aleatórios (o valor de n deve ser
             informado pelo usuário no início da execução do programa. Imprima os elementos da coleção.*/
+            Console.Clear();
+            Console.WriteLine("Questão 6 - ArrayList");
+            
             int n;
             Random random = new Random();
-            Console.WriteLine("Questão 6");
             Console.Write("Quantos números deseja gerar? \n=> ");
             n = int.Parse(Console.ReadLine());
 
@@ -188,8 +205,47 @@ namespace Lista_1
                 Console.WriteLine(i);
             }
 
-
-
+            Console.Write("Tecle qualquer coisa para voltar ao menu...");
+            Console.ReadKey();
+            Console.Clear();
         }
+
+        public static int SomaQuestao8(Stack st) {
+            int soma = 0;
+            
+            foreach (int num in st)
+            {
+                soma += num;
+            }
+
+            return soma;
+        }
+
+        public static void Questao8Stack() {
+            /*7 - Crie uma função que receba a coleção como parâmetro e retorne a soma de seus elementos.
+            OBS: considere que todos seus dados são do tipo int.*/
+            Console.Clear();
+            Console.WriteLine("Questão 8 - Stack");
+
+            int qtd;
+            Stack st = new Stack();
+
+            Console.Write("Quantos números deseja somar? \n=> ");
+            qtd = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira os números:");
+            for (int i = 0; i < qtd; i++)
+            {
+                Console.Write("=> ");
+                st.Push(int.Parse(Console.ReadLine()));
+            }
+
+            Console.WriteLine("Soma dos elementos da Stack = " + SomaQuestao8(st));
+
+            Console.Write("Tecle qualquer coisa para voltar ao menu...");
+            Console.ReadKey();
+            Console.Clear();
+        }
+
     }
 }
