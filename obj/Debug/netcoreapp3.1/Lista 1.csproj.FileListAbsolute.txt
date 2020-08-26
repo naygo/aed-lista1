@@ -50,3 +50,16 @@ C:\Users\Nayla Gomes\Documents\Faculdade\Lista 1\obj\Debug\netcoreapp3.1\Lista 1
 C:\Users\Nayla Gomes\Documents\Faculdade\Lista 1\obj\Debug\netcoreapp3.1\Lista 1.dll
 C:\Users\Nayla Gomes\Documents\Faculdade\Lista 1\obj\Debug\netcoreapp3.1\Lista 1.pdb
 C:\Users\Nayla Gomes\Documents\Faculdade\Lista 1\obj\Debug\netcoreapp3.1\Lista 1.genruntimeconfig.cache
+D:\Área de Trabalho\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.exe
+D:\Área de Trabalho\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.deps.json
+D:\Área de Trabalho\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.runtimeconfig.json
+D:\Área de Trabalho\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.runtimeconfig.dev.json
+D:\Área de Trabalho\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.dll
+D:\Área de Trabalho\aed-lista1\bin\Debug\netcoreapp3.1\Lista 1.pdb
+D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.csprojAssemblyReference.cache
+D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.AssemblyInfoInputs.cache
+D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.AssemblyInfo.cs
+D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.csproj.CoreCompileInputs.cache
+D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.dll
+D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.pdb
+D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.genruntimeconfig.cache

@@ -20,8 +20,8 @@ namespace Lista_1
                 Console.WriteLine("[7] Questão 6: ArrayList");
                 Console.WriteLine("[8] Questão 7: --- FAZER ---");
                 Console.WriteLine("[9] Questão 8: Função de retornar soma (Stack)");
-                Console.WriteLine("[10] Questão 9: --- FAZER ---");
-                Console.WriteLine("[11] Questão 10: --- FAZER ---");
+                Console.WriteLine("[10] Questão 9: Positivos");
+                Console.WriteLine("[11] Questão 10: Ocorrências");
                 Console.WriteLine("[0] - Sair");
                 Console.Write("=> ");
                 opcao = int.Parse(Console.ReadLine());
@@ -50,6 +50,12 @@ namespace Lista_1
                         break;
                     case 8:
                         Questao8Stack();
+                        break;
+                    case 9:
+                        Questao9();
+                        break;
+                    case 10:
+                        Questao10();
                         break;
                     default:
                         Console.Write("Cabo");
@@ -329,7 +335,7 @@ namespace Lista_1
             return soma;
         }
         public static void Questao8Stack() {
-            /*7 - Crie uma função que receba a coleção como parâmetro e retorne a soma de seus elementos.
+            /*8 - Crie uma função que receba a coleção como parâmetro e retorne a soma de seus elementos.
             OBS: considere que todos seus dados são do tipo int.*/
             Console.Clear();
             Console.WriteLine("Questão 8 - Stack");
@@ -350,8 +356,85 @@ namespace Lista_1
             Console.WriteLine("Soma dos elementos da Stack = " + SomaQuestao8(st));
 
             Console.Write("Tecle qualquer coisa para voltar ao menu...");
+            
+            
+            
+            Console.ReadKey();
+            Console.Clear();
+
+
+
+        }
+        
+        
+
+        public static int Questao9ElPositivos(ArrayList Al)
+        {
+            //9 – Crie uma função que calcule o número de elementos positivos
+            //    de uma coleção passada como parâmetro.
+            int num = 0;
+            foreach (int i in Al)
+                if (i > 0)
+                    num++;
+            return num;
+
+        }
+
+        public static void Questao9(){
+            
+            Console.Clear();
+            ArrayList A = new ArrayList();
+            A.Add(5);
+            A.Add(10);
+            A.Add(15);
+            A.Add(15);
+            A.Add(-3);
+
+            
+            Console.WriteLine("\nO número de elementos positivos é {0}", Questao9ElPositivos(A));
+            Console.Write("Tecle qualquer coisa para voltar ao menu...");
+            
+            
+            
+            Console.ReadKey();
+            Console.Clear();
+            
+        }
+
+
+        
+
+        public static int Questao10Ocorrencias(ArrayList Al, int n)
+        {
+            //10 – Crie uma função que calcule o número de ocorrências
+            //     em uma coleção de um elemento passado como parâmetro.
+            int elm = 0;
+
+            foreach (int i in Al)
+                if (i == n)
+                    elm++;
+            return elm;
+        }
+
+        public static void Questao10(){
+            
+            Console.Clear();
+            ArrayList A = new ArrayList();
+            A.Add(5);
+            A.Add(10);
+            A.Add(15);
+            A.Add(15);
+            A.Add(-3);
+
+            
+            Console.WriteLine("O número de ocorrências é {0}", Questao10Ocorrencias(A, 15));
+
+            Console.Write("Tecle qualquer coisa para voltar ao menu...");
+            
+            
+            
             Console.ReadKey();
             Console.Clear();
         }
-    }
+}
 }
