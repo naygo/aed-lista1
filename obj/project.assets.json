@@ -8,30 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\vinic\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Nayla Gomes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vinic\\Documents\\Faculdade\\periodos\\4 Quarto periodo (Terceiro)\\AED teorica\\exercicios\\repo\\aed-lista1\\Lista 1.csproj",
+      "projectUniqueName": "C:\\Users\\Nayla Gomes\\Documents\\Faculdade\\Lista 1\\Lista 1.csproj",
       "projectName": "Lista 1",
-      "projectPath": "C:\\Users\\vinic\\Documents\\Faculdade\\periodos\\4 Quarto periodo (Terceiro)\\AED teorica\\exercicios\\repo\\aed-lista1\\Lista 1.csproj",
-      "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vinic\\Documents\\Faculdade\\periodos\\4 Quarto periodo (Terceiro)\\AED teorica\\exercicios\\repo\\aed-lista1\\obj\\",
+      "projectPath": "C:\\Users\\Nayla Gomes\\Documents\\Faculdade\\Lista 1\\Lista 1.csproj",
+      "packagesPath": "C:\\Users\\Nayla Gomes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nayla Gomes\\Documents\\Faculdade\\Lista 1\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Nayla Gomes\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -11,13 +11,17 @@ namespace Lista_1
 
             while(opcao != 0) {
                 Console.WriteLine("Selecione a questão:");
-                Console.WriteLine("[1] - ArrayList");
-                Console.WriteLine("[2] - Queue");
-                Console.WriteLine("[3] - Stack");
-                Console.WriteLine("[4] - Erro");
-                Console.WriteLine("[5] - Questão 5 com for");
-                Console.WriteLine("[6] - Questão 5 com foreach");
-                Console.WriteLine("[7] - Questão 6 com ArrayList");
+                Console.WriteLine("[1] Questão 1: ArrayList");
+                Console.WriteLine("[2] Questão 2 Queue");
+                Console.WriteLine("[3] Questão 3: Stack");
+                Console.WriteLine("[4] Questão 4: Erro");
+                Console.WriteLine("[5] Questão 5: For");
+                Console.WriteLine("[6] Questão 5: Foreach");
+                Console.WriteLine("[7] Questão 6: ArrayList");
+                Console.WriteLine("[8] Questão 7: --- FAZER ---");
+                Console.WriteLine("[9] Questão 8: Função de retornar soma (Stack)");
+                Console.WriteLine("[10] Questão 9: --- FAZER ---");
+                Console.WriteLine("[11] Questão 10: --- FAZER ---");
                 Console.WriteLine("[0] - Sair");
                 Console.Write("=> ");
                 opcao = int.Parse(Console.ReadLine());
@@ -44,8 +48,13 @@ namespace Lista_1
                     case 7:
                         Questao6ArrayList();
                         break;
+                    case 8:
+                        Questao8Stack();
+                        break;
                     default:
                         Console.Write("Cabo");
+                        Console.Clear();
+                        Console.WriteLine("---x--- Opção inválida! ---x---");
                         break;
                 }
             }
@@ -307,9 +316,42 @@ namespace Lista_1
             {
                 Console.WriteLine(i);
             }
+        }
 
+        public static int SomaQuestao8(Stack st) {
+            int soma = 0;
 
+            foreach (int num in st)
+            {
+                soma += num;
+            }
 
+            return soma;
+        }
+        public static void Questao8Stack() {
+            /*7 - Crie uma função que receba a coleção como parâmetro e retorne a soma de seus elementos.
+            OBS: considere que todos seus dados são do tipo int.*/
+            Console.Clear();
+            Console.WriteLine("Questão 8 - Stack");
+
+            int qtd;
+            Stack st = new Stack();
+
+            Console.Write("Quantos números deseja somar? \n=> ");
+            qtd = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira os números:");
+            for (int i = 0; i < qtd; i++)
+            {
+                Console.Write("=> ");
+                st.Push(int.Parse(Console.ReadLine()));
+            }
+
+            Console.WriteLine("Soma dos elementos da Stack = " + SomaQuestao8(st));
+
+            Console.Write("Tecle qualquer coisa para voltar ao menu...");
+            Console.ReadKey();
+            Console.Clear();
         }
     }
 }
