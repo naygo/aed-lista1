@@ -391,7 +391,6 @@ namespace Lista_1
             A.Add(-3);
 
             Console.WriteLine("\nO número de elementos positivos é {0}", Questao9ElPositivos(A));
-            
             Console.Write("Tecle qualquer coisa para voltar ao menu...");            
             Console.ReadKey();
             Console.Clear();
