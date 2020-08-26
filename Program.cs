@@ -390,19 +390,13 @@ namespace Lista_1
             A.Add(15);
             A.Add(-3);
 
-            
             Console.WriteLine("\nO número de elementos positivos é {0}", Questao9ElPositivos(A));
-            Console.Write("Tecle qualquer coisa para voltar ao menu...");
             
-            
-            
+            Console.Write("Tecle qualquer coisa para voltar ao menu...");            
             Console.ReadKey();
             Console.Clear();
             
         }
-
-
-        
 
         public static int Questao10Ocorrencias(ArrayList Al, int n)
         {
@@ -426,13 +420,9 @@ namespace Lista_1
             A.Add(15);
             A.Add(-3);
 
-            
             Console.WriteLine("O número de ocorrências é {0}", Questao10Ocorrencias(A, 15));
 
             Console.Write("Tecle qualquer coisa para voltar ao menu...");
-            
-            
-            
             Console.ReadKey();
             Console.Clear();
         }
