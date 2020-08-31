@@ -63,3 +63,16 @@ D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.csproj.CoreCompi
 D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.dll
 D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.pdb
 D:\Área de Trabalho\aed-lista1\obj\Debug\netcoreapp3.1\Lista 1.genruntimeconfig.cache
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\bin\Debug\netcoreapp3.1\Lista 1.exe
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\bin\Debug\netcoreapp3.1\Lista 1.deps.json
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\bin\Debug\netcoreapp3.1\Lista 1.runtimeconfig.json
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\bin\Debug\netcoreapp3.1\Lista 1.runtimeconfig.dev.json
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\bin\Debug\netcoreapp3.1\Lista 1.dll
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\bin\Debug\netcoreapp3.1\Lista 1.pdb
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\obj\Debug\netcoreapp3.1\Lista 1.csprojAssemblyReference.cache
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\obj\Debug\netcoreapp3.1\Lista 1.AssemblyInfoInputs.cache
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\obj\Debug\netcoreapp3.1\Lista 1.AssemblyInfo.cs
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\obj\Debug\netcoreapp3.1\Lista 1.csproj.CoreCompileInputs.cache
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\obj\Debug\netcoreapp3.1\Lista 1.dll
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\obj\Debug\netcoreapp3.1\Lista 1.pdb
+C:\Users\vinic\Documents\Faculdade\periodos\4 Quarto periodo (Terceiro)\AED teorica\exercicios\repos\obj\Debug\netcoreapp3.1\Lista 1.genruntimeconfig.cache

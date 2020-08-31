@@ -8,6 +8,7 @@ namespace Lista_1
         public static void Main(string[] args)
         {
             int opcao = -1;
+            
 
             while(opcao != 0) {
                 Console.WriteLine("Selecione a questão:");
@@ -18,7 +19,7 @@ namespace Lista_1
                 Console.WriteLine("[5] Questão 5: For");
                 Console.WriteLine("[6] Questão 5: Foreach");
                 Console.WriteLine("[7] Questão 6: ArrayList");
-                Console.WriteLine("[8] Questão 7: --- FAZER ---");
+                Console.WriteLine("[8] Questão 7: Demonstração da questão 7 que inverte um arraylist");
                 Console.WriteLine("[9] Questão 8: Função de retornar soma (Stack)");
                 Console.WriteLine("[10] Questão 9: Positivos");
                 Console.WriteLine("[11] Questão 10: Ocorrências");
@@ -27,6 +28,10 @@ namespace Lista_1
                 opcao = int.Parse(Console.ReadLine());
 
                 switch(opcao) {
+                    case 0:
+                        Console.Clear();
+                        Console.WriteLine("Aperte enter");
+                        break;
                     case 1:
                         Questao1();
                         break;
@@ -49,12 +54,15 @@ namespace Lista_1
                         Questao6ArrayList();
                         break;
                     case 8:
-                        Questao8Stack();
+                        testaQuestao7();
                         break;
                     case 9:
-                        Questao9();
+                        Questao8Stack();
                         break;
                     case 10:
+                        Questao9();
+                        break;
+                    case 11:
                         Questao10();
                         break;
                     default:
@@ -64,8 +72,6 @@ namespace Lista_1
                         break;
                 }
             }
-            
-
             Console.ReadKey();
         }
 
@@ -324,6 +330,40 @@ namespace Lista_1
             }
         }
 
+        public static ArrayList Questao7(ArrayList colecao) {
+            Stack stack = new Stack();
+            
+
+            foreach(int i in colecao) {
+                stack.Push(i);
+            }
+
+            colecao.Clear();
+            foreach(int i in stack) {
+                colecao.Add(i);
+            }
+            return colecao;
+        }
+
+        public static void testaQuestao7() {
+            ArrayList al = new ArrayList() {1,2,3,4,5,6,7,8,9,10};                
+
+            Console.WriteLine("ArrayList original");
+            foreach(int i in al)
+                Console.Write($"{i} -");
+            Questao7(al);
+            Console.WriteLine();
+
+            Console.WriteLine("ArrayList invertido");
+            foreach(int i in al)
+                Console.Write($"{i} -");
+            Console.WriteLine();
+            
+            Console.Write("Tecle qualquer coisa para voltar ao menu...");
+            Console.ReadKey();
+            Console.Clear();
+        }
+
         public static int SomaQuestao8(Stack st) {
             int soma = 0;
 
@@ -334,6 +374,7 @@ namespace Lista_1
 
             return soma;
         }
+
         public static void Questao8Stack() {
             /*8 - Crie uma função que receba a coleção como parâmetro e retorne a soma de seus elementos.
             OBS: considere que todos seus dados são do tipo int.*/
@@ -361,13 +402,8 @@ namespace Lista_1
             
             Console.ReadKey();
             Console.Clear();
-
-
-
         }
         
-        
-
         public static int Questao9ElPositivos(ArrayList Al)
         {
             //9 – Crie uma função que calcule o número de elementos positivos
@@ -412,12 +448,7 @@ namespace Lista_1
         public static void Questao10(){
             
             Console.Clear();
-            ArrayList A = new ArrayList();
-            A.Add(5);
-            A.Add(10);
-            A.Add(15);
-            A.Add(15);
-            A.Add(-3);
+            ArrayList A = new ArrayList() {5,10,15,15,-3};
 
             Console.WriteLine("O número de ocorrências é {0}", Questao10Ocorrencias(A, 15));
 
