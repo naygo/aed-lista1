@@ -345,7 +345,7 @@ namespace Lista_1
         }
 
         public static void testaQuestao7() {
-            ArrayList al = new ArrayList() {1,2,3,4,5,6,7,8,9,10};
+            ArrayList al = new ArrayList() {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
             Console.WriteLine("ArrayList original");
             foreach(int i in al)
