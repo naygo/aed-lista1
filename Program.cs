@@ -329,6 +329,39 @@ namespace Lista_1
                 Console.WriteLine(i);
             }
         }
+        public static ArrayList Questao7(ArrayList colecao) {
+            Stack stack = new Stack();
+
+
+            foreach(int i in colecao) {
+                stack.Push(i);
+            }
+
+            colecao.Clear();
+            foreach(int i in stack) {
+                colecao.Add(i);
+            }
+            return colecao;
+        }
+
+        public static void testaQuestao7() {
+            ArrayList al = new ArrayList() {1,2,3,4,5,6,7,8,9,10};
+
+            Console.WriteLine("ArrayList original");
+            foreach(int i in al)
+                Console.Write($"{i} -");
+            Questao7(al);
+            Console.WriteLine();
+
+            Console.WriteLine("ArrayList invertido");
+            foreach(int i in al)
+                Console.Write($"{i} -");
+            Console.WriteLine();
+
+            Console.Write("Tecle qualquer coisa para voltar ao menu...");
+            Console.ReadKey();
+            Console.Clear();
+        }
 
         public static int SomaQuestao8(Stack st) {
             int soma = 0;
