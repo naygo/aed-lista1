@@ -19,10 +19,12 @@ namespace Lista_1
                 Console.WriteLine("[5] Questão 5: For");
                 Console.WriteLine("[6] Questão 5: Foreach");
                 Console.WriteLine("[7] Questão 6: ArrayList");
-                Console.WriteLine("[8] Questão 7: Demonstração da questão 7 que inverte um arraylist");
-                Console.WriteLine("[9] Questão 8: Função de retornar soma (Stack)");
-                Console.WriteLine("[10] Questão 9: Positivos");
-                Console.WriteLine("[11] Questão 10: Ocorrências");
+                Console.WriteLine("[8] Questão 6: Queue");
+                Console.WriteLine("[9] Questão 6: Stack");
+                Console.WriteLine("[10] Questão 7: Demonstração da questão 7 que inverte um arraylist");
+                Console.WriteLine("[11] Questão 8: Função de retornar soma (Stack)");
+                Console.WriteLine("[12] Questão 9: Positivos");
+                Console.WriteLine("[13] Questão 10: Ocorrências");
                 Console.WriteLine("[0] - Sair");
                 Console.Write("=> ");
                 opcao = int.Parse(Console.ReadLine());
@@ -53,16 +55,22 @@ namespace Lista_1
                     case 7:
                         Questao6ArrayList();
                         break;
-                    case 8:
-                        testaQuestao7();
+                    case 8: 
+                         Questao6Queue();
                         break;
-                    case 9:
-                        Questao8Stack();
+                    case 9: 
+                         Questao6Stack();
                         break;
                     case 10:
-                        Questao9();
+                        testaQuestao7();
                         break;
                     case 11:
+                        Questao8Stack();
+                        break;
+                    case 12:
+                        Questao9();
+                        break;
+                    case 13:
                         Questao10();
                         break;
                     default:
@@ -343,6 +351,46 @@ namespace Lista_1
             }
             return colecao;
         }
+         public static void Questao6Queue() {
+            /*6 - Faça um programa que gere uma coleção com n números inteiros aleatórios (o valor de n deve ser
+            informado pelo usuário no início da execução do programa. Imprima os elementos da coleção.*/
+            int n;
+            Random random = new Random();
+            Console.WriteLine("Questão 6");
+            Console.Write("Quantos números deseja gerar? \n=> ");
+            n = int.Parse(Console.ReadLine());
+
+            Queue colecao = new Queue();
+            for(int i = 0; i < n; i++)
+            {
+                colecao.Enqueue(random.Next(0,200));
+            }
+            foreach(int i in colecao)
+            {
+                Console.WriteLine(i);
+            }
+        }
+         public static void Questao6Stack() {
+            /*6 - Faça um programa que gere uma coleção com n números inteiros aleatórios (o valor de n deve ser
+            informado pelo usuário no início da execução do programa. Imprima os elementos da coleção.*/
+            int n;
+            Random random = new Random();
+            Console.WriteLine("Questão 6");
+            Console.Write("Quantos números deseja gerar? \n=> ");
+            n = int.Parse(Console.ReadLine());
+
+            Stack colecao = new Stack();
+            for(int i = 0; i < n; i++)
+            {
+                colecao.Push(random.Next(0,200));
+            }
+            foreach(int i in colecao)
+            {
+                Console.WriteLine(i);
+            }
+        }
+       
+
 
         public static void testaQuestao7() {
             ArrayList al = new ArrayList() {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
